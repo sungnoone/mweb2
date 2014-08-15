@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iOS App</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css">
+    <link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/jquery.mobile-1.4.2.js"></script>
+</head>
+<body>
+
+<!-- iOS Page -->
+<div data-role="page" style="margin-top: 20px">
+    <div data-role="header">
+        <h1>iOS App</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <a data-role="button" data-inline="true" class="ipa-list"
+           href="itms-services://?action=download-manifest&url=http://192.168.1.237/ipa/touchpaint1/touchpaint1.plist">TouchPaint</a>
+        <a data-role="button" data-inline="true" class="ipa-list"
+           href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/u/105964842/touchpaint1/touchpaint1.plist">Dropbox-TouchPaint</a>
+
+        <a data-role="button" data-inline="true" class="ipa-list"
+           href="itms-services://?action=download-manifest&url=http://192.168.1.237/ipa/test11/test11.plist">test11</a>
+        <a data-role="button" data-inline="true" class="ipa-list"
+           href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/u/105964842/test11/test11.plist">Dropbox-test11</a>
+    </div>
+</div>
+
+
+</body>
+</html>

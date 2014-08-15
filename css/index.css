@@ -1,0 +1,24 @@
+.ui-icon-iOSApp:after{
+    background-image: url("images/app-ui-icon-iOSApp.png") !important;
+}
+
+.ui-icon-AndroidApp:after{
+    background-image: url("images/app-ui-icon-AndroidApp.png") !important;
+}
+
+.ui-grid-c img{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.ui-grid-c div{
+    padding: 10px;
+}
+
+.imgCaption{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -20px;
+}
