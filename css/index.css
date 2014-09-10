@@ -22,3 +22,13 @@
     font-size: 12px;
     margin-top: -20px;
 }
+
+#message{
+    padding: 10px;
+    height: 100px;
+    border: solid 1px #aaaaaa;
+    background-color: #ffff00;
+    color: #000000;
+    font-family: monospace;
+    overflow: auto;
+}

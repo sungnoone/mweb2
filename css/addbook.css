@@ -1,0 +1,9 @@
+#field_book_description{
+    padding: 10px;
+    height: 100px;
+    border: solid 1px #aaaaaa;
+    background-color: #ffff00;
+    color: #000000;
+    font-family: monospace;
+    overflow: auto;
+}
