@@ -6,11 +6,6 @@ $(document).ready(function(){
 
 })
 
-var RESTFUL_HOST = "http://192.168.1.229:8088";
-var RESTFUL_URL_TEST = "/msrv2/";
-var RESTFUL_URL_ORDER_SAVE = "/msrv2/order/order_insert_multi/";
-var RESTFUL_URL_BOOK_SAVE = "/msrv2/book/book_insert_multi/";
-
 /*===================================================================*/
 
 
