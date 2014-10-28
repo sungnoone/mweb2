@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css">
     <script src="js/jquery-2.1.0.js"></script>
     <script src="js/jquery.mobile-1.4.2.js"></script>
-    <script src="js/jquery.iframe-transport.js"></script>
-    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/barcode.js"></script>
     <link rel="stylesheet" href="css/addbook.css">
     <title>Add Order</title>
 </head>
 <body>
+
 <!--主頁-->
 <div data-role="page" id="page_main" style="margin-top: 20px">
     <div data-role="header">
@@ -26,7 +26,7 @@
         <a href="#" data-icon="plus" onclick="btn_book_save()">儲存</a>
     </div>
     <div data-role="content" class="ui-content">
-        <form id="addbook_form">
+        <form id="addbook_form" method="POST" enctype="multipart/form-data">
             <div data-role="fieldcontain">
                 <input type="search" name="search" id="book_search" value="" placeholder="產品編號">
             </div>
@@ -48,13 +48,19 @@
                 <textarea id="book_description"></textarea>
             </div>
             <div data-role="fieldcontain">
-                <label for="book_pic1" >圖片1</label>
-                <input id="book_pic1" type="file" multiple/>
-                <a href="#" data-role="button" data-inline="true" data-icon="plus" onclick="btn_book_pic1_upload()">Add</a>
+                <!--<label for="book_pic1" >圖片1</label>-->
+                <!--<input id="book_pic1" type="file" multiple/>-->
+                <!--<a href="#" data-role="button" data-inline="true" data-icon="plus" onclick="btn_book_pic1_upload()">Add</a>-->
             </div>
-            <div id="img"></div>
+            <div data-role="fieldcontain">
+                <input id="fileupload" type='file' name="files[]" data-url="http://192.168.1.229:8088/msrv2/test/fileupload/" multiple/>
+                <div id="img-name"></div>
+            </div>
         </form>
     </div>
 </div>
+
+
+
 </body>
 </html>

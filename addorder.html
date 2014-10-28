@@ -2,16 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css">
-    <link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css">
-    <script src="js/jquery-2.1.0.js"></script>
-    <script src="js/jquery.mobile-1.4.2.js"></script>
-    <script src="js/barcode.js"></script>
     <title>Add Order</title>
 </head>
 <body>
@@ -20,29 +10,32 @@
     <div data-role="header">
         <a href="barcode.html" data-icon="back">Back</a>
         <h1>新增外單</h1>
-        <a href="#" data-icon="home">儲存</a>
+        <a href="#" data-icon="home" onclick="btn_order_save();">儲存</a>
     </div>
     <div data-role="content" class="ui-content">
         <form>
             <div data-role="fieldcontain">
                 <label for="order_barcode">外單條碼編號</label>
                 <input id="order_barcode" type="text" />
+                <label for="order_subscriber">訂購人</label>
+                <input id="order_subscriber" type="text" />
+                <label for="order_address">出貨地址</label>
+                <input id="order_address" type="text" />
             </div>
-            <div data-role="fieldcontain" class="ui-hide-label">
-                <fieldset class="ui-grid-a">
-                    <div class="ui-block-a" style="width: 80%">
-                        <!--<label for="book_barcode" class="ui-hide-label">產品條碼編號</label>-->
-                        <input id="book_barcode" data-inline="true" type="text" placeholder="產品條碼編號" />
-                    </div>
-                    <div class="ui-block-b" style="width: 20%">
-                        <input type="submit" data-mini="true" data-type="button" data-icon="plus" value="Add" />
-                    </div>
-                </fieldset>
-            </div>
-            <hr />
         </form>
     </div>
 </div>
 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.2.css">
+<link rel="stylesheet" href="css/jquery.mobile.inline-svg-1.4.2.css">
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/jquery.mobile-1.4.2.js"></script>
+<script src="js/index.js"></script>
+<script src="js/barcode.js"></script>
 </body>
 </html>
